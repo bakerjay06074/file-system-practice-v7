@@ -13,7 +13,7 @@ function onDeviceReady() {
 }
 
 function openFileSystem() {
-  window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, function (dirEntry) {
+  window.resolveLocalFileSystemURL(cordova.file.documentsDirectory, function (dirEntry) {
     alert('file system open: ' + dirEntry.name);
     var isAppend = true;
     createFile(dirEntry, "fileToAppend.txt", isAppend);
