@@ -15,5 +15,6 @@
 <preference name="phonegap-version" value="cli-6.3.1" />
     <preference name="AndroidPersistentFileLocation" value="Internal" />
    <plugin name="cordova-plugin-file" spec="~4.3.1" />
-   <plugin name="cordova-plugin-geolocation" spec="~2.4.1" />    
+   <plugin name="cordova-plugin-geolocation" spec="~2.4.1" />
+    <gap:plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />
 </widget>
