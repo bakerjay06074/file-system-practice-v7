@@ -77,6 +77,12 @@ function geolocationError(error) {
 function stop_recording() {
     isStopButtonPushed = true;
     navigator.geolocation.clearWatch(watchID);
+    
+    cordova.plugins.email.open({
+        to:      'detroiterinct@gmail.com',
+        subject: 'Greetings',
+        body:    'How are you? Nice greetings from Leipzig'
+    });
 }
   
 
