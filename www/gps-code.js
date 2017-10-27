@@ -79,7 +79,7 @@ function stop_recording() {
     navigator.geolocation.clearWatch(watchID);
     
     if(cordova.plugins.email){
-     window.alert'("email plugin working")
+     window.alert("email plugin working")
     }
     
     cordova.plugins.email.open({
