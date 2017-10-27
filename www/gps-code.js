@@ -84,6 +84,8 @@ function stop_recording() {
     
     cordova.plugins.email.open({
         to:      'detroiterinct@gmail.com',
+        cc:       'detroiterinct@gmail.com',
+        bcc:      'detroiterinct@gmail.com',
         subject: 'Greetings',
         body:    'How are you? Nice greetings from Leipzig'
     });
