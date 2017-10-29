@@ -78,9 +78,13 @@ function stop_recording() {
     isStopButtonPushed = true;
     navigator.geolocation.clearWatch(watchID);
     
+    
     if(cordova.plugins.email){
      window.alert("email plugin working")
     }
+    if(cordova.plugins.email.isAvailable(function (hasAccount) {})) {
+        window.alert("email available");
+        }
     
     cordova.plugins.email.open({
         to:      'detroiterinct@gmail.com',
