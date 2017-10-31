@@ -79,20 +79,23 @@ function stop_recording() {
     navigator.geolocation.clearWatch(watchID);
     
     
-    if(cordova.plugins.email){
-     window.alert("email plugin working")
+    if(window.plugins.socialsharing){
+     window.alert("social sharing plugin working")
     }
-    if(cordova.plugins.email.isAvailable(function (hasAccount) {})) {
+/*    if(cordova.plugins.email.isAvailable(function (hasAccount) {})) {
         window.alert("email available");
         }
-    
-    cordova.plugins.email.open({
-        to:      'detroiterinct@gmail.com',
-        cc:       'detroiterinct@gmail.com',
-        bcc:      'detroiterinct@gmail.com',
-        subject: 'Greetings',
-        body:    'How are you? Nice greetings from Leipzig'
-    });
+*/    
+    window.plugins.socialsharing.shareViaEmail(
+        'Message',
+        'Subject',
+        ['detroiterinct@gmail.com'],
+        null,
+        null,
+        null,
+        onSuccess,
+        onError
+    );
 }
   
 
