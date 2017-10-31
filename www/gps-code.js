@@ -79,13 +79,13 @@ function stop_recording() {
     navigator.geolocation.clearWatch(watchID);
     
     
-    if(window.plugins.socialsharing){
+/*    if(window.plugins.socialsharing){
      window.alert("social sharing plugin working")
     }
-/*    if(cordova.plugins.email.isAvailable(function (hasAccount) {})) {
+    if(cordova.plugins.email.isAvailable(function (hasAccount) {})) {
         window.alert("email available");
         }
-*/    
+    
     window.plugins.socialsharing.shareViaEmail(
         'Message',
         'Subject',
@@ -96,6 +96,8 @@ function stop_recording() {
         onSuccess,
         onError
     );
+ */
+    
 }
   
 
