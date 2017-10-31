@@ -18,5 +18,5 @@
    <plugin name="cordova-plugin-geolocation" spec="~2.4.1" />
     <!-- <plugin spec="https://github.com/katzer/cordova-plugin-email-composer.git#0.8.11" source="git" /> -->
     <!-- <plugin name="cordova-plugin-email-composer"  spec="~0.8.3" source="npm" /> -->
-    <plugin name="cordova-plugin-socialsharing" source="npm" />
+    <plugin name="cordova-plugin-x-socialsharing" source="npm" />
 </widget>
